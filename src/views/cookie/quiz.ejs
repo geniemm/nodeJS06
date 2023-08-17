@@ -1,0 +1,14 @@
+
+
+<h3>quiz 페이지 입니당</h3>
+<% console.log("cookie:",userCookie) %>
+<% if(userCookie == undefined){ %>
+    <script>
+        // 쿠키가 존재하지 않는다면 팝업창을 띄어줄거다
+        const opt = "width=300,height=200,top=500,left=500";
+        window.open("/cookie/quiz_popup","",opt);
+       
+    </script>
+<%}else{%>
+    쿠키가 있다
+<%}%>
